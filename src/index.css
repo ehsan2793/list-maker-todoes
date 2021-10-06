@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: linear-gradient(to right bottom, #e1b382, #c89666);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-wrapper {
+    background: #12343b;
+    min-width: 450px;
+    min-height: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 6px 40px black;
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+.header h1{
+    color: white;
+    text-align: center;
+    margin:30px 0;
+
+}
+
+.task-input {
+    outline: none;
+    width: 260px;
+    padding: 15px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: #ffffff;
+    background: #000000;
+    border: 1px solid #eccd05;
+    border-radius: 10px;
+}
+
+.button-add {
+    width: 70px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0;
+    background: #f1af71;
+    cursor: pointer;
+
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 30px;
+    z-index: 20;
+
+}
+
+.button-complete,
+.button-delete,
+.button-edit{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    font-size:28px;
+    border-radius:50%;
+}
+.button-complete {
+    color: #ff6c6c;
+    margin-right: 10px;
+}
+
+.button-edit {
+    color: #e3cb05;
+    margin-left: 10px;
+}
+.button-delete {
+    color: lightseagreen;
+}
+
+.complete {
+    text-decoration-style:solid;
+    text-decoration-line: line-through;
+    text-decoration-color:#ff6c6c;
+    opacity: 0.5;
+    background: #12343b;
+    border: none;
+    color: white;
+    font-size: 20px;
+    z-index: 999;
+}
+.list {
+    width: 220px;
+    background: #12343b;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 15px;
+    z-index: 999;
+
+}
+
+input:focus, button:focus {
+    outline:none;
+}
